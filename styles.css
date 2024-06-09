@@ -1,0 +1,38 @@
+/*Browers resets!*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    min-height: 100vh;
+    background: #86a8a9;
+    font-size: 16px;
+    font-family: "Roboto Mono", monospace, serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+header {
+    margin: .2rem;
+    min-height: 8vh;
+    background: #758585;
+    display: grid;
+    align-items: center;
+
+}
+nav ul {
+    padding: .2rem 3rem;
+    background: #758585;
+    font-weight: 300;
+    display: flex;
+    list-style: none;
+    flex-direction: row; /* @TODO Should be Column if mobile first*/
+    justify-content: space-between;
+
+    a {
+        text-decoration: none;
+    }
+}
