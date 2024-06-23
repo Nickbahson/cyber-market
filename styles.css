@@ -1,7 +1,7 @@
-/*Browers resets!*/
+/*Browers resets and globals !*/
 * {
-    padding: 0;
-    margin: 0;
+    padding: .3rem;
+    margin: .3rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
@@ -23,6 +23,19 @@ header {
     align-items: center;
 
 }
+
+main {
+    margin: .2rem;
+    padding: .2rem;
+}
+/** Margin and padding for most elements */
+input {
+   margin: .2rem;
+   padding: .3rem;
+   border-radius: .3rem;
+}
+
+
 nav ul {
     padding: .2rem 3rem;
     background: #758585;
@@ -35,4 +48,29 @@ nav ul {
     a {
         text-decoration: none;
     }
+}
+
+
+#contact-form{
+   background: yellow;
+   margin: .2rem;
+   padding: .3rem;
+   border: 1px solid green;
+   border-radius: .3rem;
+   display: flex;
+  flex-direction: column;
+  gap: .3rem;
+
+  #grp-fields {
+     /**background: red; */
+     display: flex;
+     justify-content: center;
+  }
+
+}
+
+#inline-images {
+  margin: auto;
+  display: grid;
+  align-items: center;
 }
