@@ -8,8 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
+    background-image: url('images/background 2.jpeg');
+    background-size: auto;
+    color: #b9b9b7;
     min-height: 100vh;
-    background: #86a8a9;
     font-size: 16px;
     font-family: "Roboto Mono", monospace, serif;
     font-optical-sizing: auto;
@@ -57,10 +59,10 @@ nav ul {
 .intro,
 #form{
     max-width: 500px;
-   background: #afaf84;
+   background: #3b3a3a;
    margin: auto;
    padding: .3rem;
-   border: 1px solid #80de80;
+   border: 1px solid green;
    border-radius: .3rem;
    display: flex;
   flex-direction: column;
@@ -77,14 +79,14 @@ nav ul {
 }
 
 .jd {
-    background: #5d836c;
+    background: #303333;
     width: 95%;
-    border: 1px solid #a6bda6;
+    border: 1px solid green;
     border-radius: .3rem;
     margin: auto;
     padding: .3rem;
     display: inline-block;
-    box-shadow: .6rem .3rem .3rem #0f2312;
+    box-shadow: .6rem .3rem .3rem #999d99;
 
 
 }
@@ -100,12 +102,33 @@ nav ul {
     background: yellow;
     display: grid;
     grid-template-columns: 250px auto;
+    height: auto;
 
     .filters {
-        background: #5d836c;
+        background: #383737;
+        min-height: 80vh;
     }
 
     .listing {
-        background: #758585;
+        background: #525454;
+        display: grid;
+        gap: .3rem;
+        grid-template-columns: auto auto auto auto;
+        height: auto;
+
+        .product {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            border-radius: 10px;
+            display: inline-block;
+            min-width: 250px;
+            height: 100%;
+            margin: 2rem;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
