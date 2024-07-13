@@ -41,6 +41,23 @@ input {
    border-radius: .3rem;
 }
 
+input[type="submit"],
+input[type="reset"],
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+form {
+    input[type="reset"] {
+        background-color: #e07d1d;
+    }
+}
 
 nav ul {
     padding: .2rem 3rem;
