@@ -1,33 +1,178 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Cyber Markets - Advertisements </title>
-    <link href="styles.css" rel="stylesheet"/>
-    <script async src="main.js"></script>
+<header>
+    <nav id="main-menu">
+        <ul>
+            <li><a href="#">home<./index.html</a></li>
+            <li><a href="./listings.html">Listings</a></li>
+            <li><a href="./advertisements.html">Advertisements</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cyber markert Tech Products Advertisement</title>
+    <style>
+        body {
+            background-image: url('background 2.jpeg');
+            background-size: auto;
+            color:orange;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .product-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .marquee {
+            margin-top: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .marquee p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        .more-details {
+            display: none;
+            text-align: left;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-
-    <header>
-        <nav id="main-menu">
+    <div class="content">
+        <h1>Introducing the EcoSmart Watch</h1>
+        <p>Your ultimate eco-friendly smartwatch experience.</p>
+        <div class="product-image">
+            <img src="smart watch.jpeg" alt="EcoSmart Watch"> 
+        </div>
+        <h2>Features</h2>
+        <ul>
+            <li>Solar-powered charging</li>
+            <li>Made from recycled materials</li>
+            <li>Heart rate monitor</li>
+            <li>GPS tracking</li>
+            <li>Water-resistant up to 50 meters</li>
+        </ul>
+        <div class="marquee">
+            <p>Special Offer: Get 20% off your first EcoSmart Watch!with a free headset.</p>
+        </div>
+        <button onclick="toggleDetails('details-watch')">More Details</button>
+        <div id="details-watch" class="more-details">
+            <h2>Technical Specifications</h2>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./listings.html">Listings</a></li>
-                <li><a href="./advertisements.html">Advertisements</a></li>
-                <li><a href="./careers.html">Careers</a></li>
-                <li><a href="./about.html">About</a></li>
+                <li>Battery Life: Up to 14 days</li>
+                <li>Display: 1.4-inch AMOLED</li>
+                <li>Compatibility: iOS and Android</li>
+                <li>Connectivity: Bluetooth 5.0, Wi-Fi</li>
+                <li>Warranty: 2 years</li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </div>
 
-    <main>
-        <!-- START of main content -->
+    <div class="content">
+        <h1>Introducing the EcoPower Bank</h1>
+        <p>The eco-friendly solution to keep your devices charged on the go.</p>
+        <div class="product-image">
+            <img src="smart charge.jpeg" alt="EcoPower Bank"> 
+        </div>
+        <h2>Features</h2>
+        <ul>
+            <li>Solar-powered charging</li>
+            <li>High-capacity battery</li>
+            <li>Multiple USB ports</li>
+            <li>Fast charging</li>
+            <li>Durable and portable</li>
+        </ul>
+        <div class="marquee">
+            <p>Special Offer: Get 20% off your first EcoPower Bank! Use code GREENPOWER at checkout.</p>
+        </div>
+        <button onclick="toggleDetails('details-power-bank')">More Details</button>
+        <div id="details-power-bank" class="more-details">
+            <h2>Technical Specifications</h2>
+            <ul>
+                <li>Battery Capacity: 20,000mAh</li>
+                <li>Output: 5V/3A, 9V/2A, 12V/1.5A</li>
+                <li>Input: 5V/2A, 9V/2A</li>
+                <li>Dimensions: 150 x 70 x 20 mm</li>
+                <li>Weight: 300 grams</li>
+                <li>Warranty: 1 year</li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="content">
+        <h1>Introducing the GreenEar speaker</h1>
+        <p>Experience high-quality sound with eco-friendly wireless earbuds.</p>
+        <div class="product-image">
+            <img src="speaker.jpeg" alt="GreenEar Buds"> 
+        </div>
+        <h2>Features</h2>
+        <ul>
+            <li>Made from recycled materials</li>
+            <li>Noise-cancellation</li>
+            <li>Wireless charging</li>
+            <li>Water-resistant</li>
+            <li>Long battery life</li>
+        </ul>
+        <div class="marquee">
+            <p>Special Offer: Get 20% off your first GreenEar Buds! Use code GREENBUDS at checkout.</p>
+        </div>
+        <button onclick="toggleDetails('details-earbuds')">More Details</button>
+        <div id="details-earbuds" class="more-details">
+            <h2>Technical Specifications</h2>
+            <ul>
+                <li>Battery Life: Up to 8 hours (earbuds), 30 hours non stop music!!!)</li>
+                <li>Bluetooth: 5.0</li>
+                <li>Charging Time: 1.5 hours</li>
+                <li>Water Resistance: IPX5</li>
+                <li>Warranty: 1 year</li>
+            </ul>
+        </div>
+    </div>
 
-        <!-- END of main content -->
-    </main>
-
-    <footer>
-
-    </footer>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
 </body>
-
 </html>

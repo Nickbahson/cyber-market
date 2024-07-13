@@ -14,37 +14,172 @@
             <li><a href="./advertisements.html">Advertisements</a></li>
             <li><a href="./careers.html">Careers</a></li>
             <li><a href="./about.html">About</a></li>
+            <li><a href="./exit page.html">exit page</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
     <!-- START of main content -->
-    <h1>Welcome to Cyber Market</h1>
-    <p>A collection of shops aimed at serving their client's needs effectively and efficiently.</p>
-    <hr>
-    <h5>Our History!</h5>
-    <hr>
-    <p>
-        Like most startup, ours spanned out of need, the lack of better services and the need of such!
-    </p>
-    <p>
-        We met at a coffee shop to discuss this :) ............ add more!!
-    </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Market - Your One-Stop Tech Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .hero {
+            background-image: url('background 4.jpeg');
+            background-size: auto;
+            background-position: center;
+            color: orange;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .hero button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hero button:hover {
+            background-color: #cc5200;
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .featured-products, .categories, .testimonials {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product, .category, .testimonial {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img, .category img, .testimonial img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to Cyber Market</h1>
+        <p>Your one-stop shop for the latest tech products</p>
+        <button onclick="location.href='#featured-products'">Shop Now</button>
+    </div>
 
-    <hr>
-    <p>
-        If you would like to work for us, please visit our careers page and apply for a position; remember to tell
-        us why you would like to work with us.
-    </p>
+    <div class="content">
+        <div id="featured-products">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="featured-products">
+                <div class="product">
+                    <img src="iphone 14 pro.jpeg" alt="phones"> 
+                    <h3>Product 1</h3>
+                    <p>Latest features and specifications.</p>
+                    <button onclick="location.href='product1.html'">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="laptops.jpeg" alt="laptops"> 
+                    <h3>Product 2</h3>
+                    <p>Top-notch performance and quality.</p>
+                    <button onclick="location.href='product2.html'">View Details</button>
+                </div>
+                <div class="product">
+                    <img src="jbl speaker.jpeg" alt="speakers"> 
+                    <h3>Product 3</h3>
+                    <p>Unmatched reliability and value.</p>
+                    <button onclick="location.href='product3.html'">View Details</button>
+                </div>
+            </div>
+        </div>
 
+        <div id="categories">
+            <h2 class="section-title">Product Categories</h2>
+            <div class="categories">
+                <div class="category">
+                    <img src="category1.jpg" alt="Category 1"> <!-- Replace with your category image -->
+                    <h3>Category 1</h3>
+                </div>
+                <div class="category">
+                    <img src="category2.jpg" alt="Category 2"> <!-- Replace with your category image -->
+                    <h3>Category 2</h3>
+                </div>
+                <div class="category">
+                    <img src="category3.jpg" alt="Category 3"> <!-- Replace with your category image -->
+                    <h3>Category 3</h3>
+                </div>
+            </div>
+        </div>
 
-    <!-- END of main content -->
-</main>
+        <div id="testimonials">
+            <h2 class="section-title">Customer Testimonials</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="customer1.jpg" alt="Customer 1"> <!-- Replace with your testimonial image -->
+                    <p>"Cyber Market offers the best tech products! Highly recommend."</p>
+                    <h4>- Customer 1</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="customer2.jpg" alt="Customer 2"> <!-- Replace with your testimonial image -->
+                    <p>"Excellent customer service and fast shipping."</p>
+                    <h4>- Customer 2</h4>
+                </div>
+                <div class="testimonial">
+                    <img src="customer3.jpg" alt="Customer 3"> <!-- Replace with your testimonial image -->
+                    <p>"Great selection of products at unbeatable prices."</p>
+                    <h4>- Customer 3</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<footer>
+    <div class="footer">
+        <p>&copy; 2024 Cyber Market. All rights reserved.</p>
+        <p><a href="./about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </div>
 
-</footer>
+    <script>
+        // Additional JavaScript can be added here for interactivity
+    </script>
 </body>
 
 </html>
