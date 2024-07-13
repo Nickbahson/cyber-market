@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Cyber Markets - <This Page Title></title>
+    <link href="styles.css" rel="stylesheet"/>
+    <script async src="main.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="./listings.html">Listings</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./advertisements.html">Advertisements</a></li>
+                <li><a href="./careers.html">Careers</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./exit.html">Exit</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main background="./images/lukasz-szmigiel-Uw9DfCe2e7A-unsplash.jpg">
+        <div class="intro">
+            <h3>Please leave us a comment (review). </h3>
+        </div>
+        <form action="#"  method="POST" id="form">
+            <div class="grp-fields">
+                <label for="first-name"> First name </label>
+                <input id="first-name" type="text" name="first-name" placeholder="First name"  required>
+
+                <label for="second-name"> Second name </label>
+                <input id="second-name" type="text" name="second-name" placeholder="Second name" required >
+            </div>
+
+            <div class="grp-fields">
+                <label for="message"> Review comment </label>
+                <textarea
+                        id="message"
+                        rows=10
+                        cols=40
+                >
+             </textarea>
+            </div>
+            <fieldset class="grp-fields">
+                <legend>On a scale of 1 to 10, would you recommend our services to a friend?</legend>
+
+                <div>
+                    <input type="radio" id="1" name="rating" value="1" />
+                    <label for="1"><sup>1</sup>/<sub>10</sub></label>
+                </div>
+
+                <div>
+                    <input type="radio" id="2" name="rating" value="2" />
+                    <label for="2"><sup>2</sup>/<sub>10</sub></label>
+                </div>
+
+                <div>
+                    <input type="radio" id="3" name="rating" value="3" />
+                    <label for="3"><sup>3</sup>/<sub>10</sub></label>
+                </div>
+                <div>
+                    <input type="radio" id="4" name="rating" value="4" />
+                    <label for="4"><sup>4</sup>/<sub>10</sub></label>
+                </div>
+                <div>
+                    <input type="radio" id="5" name="rating" value="5" />
+                    <label for="5"><sup>5</sup>/<sub>10</sub></label>
+                </div>
+                <div>
+                    <input type="radio" id="6" name="rating" value="6" />
+                    <label for="6"><sup>6</sup>/<sub>10</sub></label>
+                </div>
+                <div>
+                    <input type="radio" id="7" name="rating" value="7" />
+                    <label for="7"><sup>7</sup>/<sub>10</sub></label>
+                </div>
+                <div>
+                    <input type="radio" id="8" name="rating" value="8" />
+                    <label for="8"><sup>8</sup>/<sub>10</sub></label>
+                </div>
+                <div>
+                    <input type="radio" id="9" name="rating" value="9" />
+                    <label for="9"><sup>9</sup>/<sub>10</sub></label>
+                </div>
+                <div>
+                    <input type="radio" id="10" name="rating" value="10" />
+                    <label for="10"><sup>10</sup>/<sub>10</sub></label>
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" value="Send review"/>
+                <input type="reset" value="Clear inputs"/>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

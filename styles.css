@@ -1,8 +1,9 @@
 /*Browers resets and globals !*/
-* {
-    padding: .3rem;
-    margin: .3rem;
-}
+
+/** {*/
+/*    margin: .3rem;*/
+/*    padding: .3rem;*/
+/*}*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
@@ -12,8 +13,11 @@ body {
     font-size: 16px;
     font-family: "Roboto Mono", monospace, serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
+    margin: .3rem;
+    padding: .3rem;
+    line-height: 1.2rem;
 }
 header {
     margin: .2rem;
@@ -50,27 +54,58 @@ nav ul {
     }
 }
 
-
-#contact-form{
-   background: yellow;
-   margin: .2rem;
+.intro,
+#form{
+    max-width: 500px;
+   background: #afaf84;
+   margin: auto;
    padding: .3rem;
-   border: 1px solid green;
+   border: 1px solid #80de80;
    border-radius: .3rem;
    display: flex;
   flex-direction: column;
   gap: .3rem;
 
-  #grp-fields {
-     /**background: red; */
-     display: flex;
-     justify-content: center;
+    .grp-fields,
+    #grp-fields {
+     /*background: red;*/
+     display: grid;
+      grid-template-columns: 50% 50%;
+     /*justify-content: center;*/
   }
 
 }
 
+.jd {
+    background: #5d836c;
+    width: 95%;
+    border: 1px solid #a6bda6;
+    border-radius: .3rem;
+    margin: auto;
+    padding: .3rem;
+    display: inline-block;
+    box-shadow: .6rem .3rem .3rem #0f2312;
+
+
+}
+
+.pickup-stations,
 #inline-images {
   margin: auto;
   display: grid;
   align-items: center;
+}
+
+.product-listing {
+    background: yellow;
+    display: grid;
+    grid-template-columns: 250px auto;
+
+    .filters {
+        background: #5d836c;
+    }
+
+    .listing {
+        background: #758585;
+    }
 }
