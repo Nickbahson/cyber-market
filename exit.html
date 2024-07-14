@@ -3,6 +3,33 @@
     <title>Cyber Markets - <This Page Title></title>
     <link href="styles.css" rel="stylesheet"/>
     <script async src="main.js"></script>
+    <style>
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .star {
+            font-size: 2rem;
+            color:  #ddd;
+            cursor: pointer;
+        }
+        .star.checked {
+            color: #f5b301;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-media img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -40,6 +67,35 @@
                 >
              </textarea>
             </div>
+            <div class="grp-fields">
+                <div class="star-rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+            <div class="grp-fields">
+                <div class="confirmation">
+                    Thank you for your feedback!
+                </div>
+            </div>
+            <div class="grp-fields">
+                <div class="social-media">
+                    <p>Follow us on:</p>
+                    <a href="https://www.facebook.com/yourpage" target="_blank">
+                        <img src="images/facebook.avif" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <img src="images/insta.avif" alt="Instagram">
+                    </a>
+                    <a href="https://www.twitter.com/yourprofile" target="_blank">
+                        <img src="images/twitter.avif" alt="Twitter">
+                    </a>
+                </div>
+            </div>
+
             <fieldset class="grp-fields">
                 <legend>On a scale of 1 to 10, would you recommend our services to a friend?</legend>
 
