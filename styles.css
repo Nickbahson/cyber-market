@@ -3,7 +3,8 @@
 body {
     background-image: url('images/background 2.jpeg');
     background-size: auto;
-    color: #b9b9b7;
+    /*color: #b9b9b7;*/
+    color:orange;
     min-height: 100vh;
     font-size: 16px;
     font-family: "Roboto Mono", monospace, serif;
